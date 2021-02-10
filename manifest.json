@@ -1,0 +1,16 @@
+{
+    "name": "Desk Ticket helper for Payment Cloud",
+    "version": "1.4",
+    "description": "Populate Ticket values based on invoking Submission's page",
+       "content_scripts": [
+        {
+          "matches":[
+            "https://crm.zoho.com/crm/org49631815/*" ,
+            "https://desk.zoho.com/support/paymentcloudinc/*"
+          ],
+          "js": ["content.js"],
+          "all_frames": true
+        }
+      ],
+    "manifest_version": 2
+}
